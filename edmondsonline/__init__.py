@@ -37,6 +37,9 @@ def create_app(config_class=Config):
 
     from edmondsonline.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
+    
+    from edmondsonline.landing import bp as landing_bp
+    app.register_blueprint(landing_bp)
 
     from edmondsonline.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
