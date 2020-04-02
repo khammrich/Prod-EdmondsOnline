@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>{{ _('Sign In') }}</h1>
+    <div class="row">
+        <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+        </div>
+        <div class="col-xs-12 col-md-4">
+        <p>Sign in to the Blog to make a post:
+        <ul>
+            <li>Ask for assistance with anything</li>
+            <li>Talk about how you are doing</li>
+            <li>Feature a local merchant</li>
+            <li>Report an event</li>
+            <li>Discuss what is happening</li>
+        </ul>
+        </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <p>{{ _('New User?') }} <a href="{{ url_for('auth.register') }}">{{ _('Click to Register!') }}</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <p>
+            {{ _('Forgot Your Password?') }}
+            <a href="{{ url_for('auth.reset_password_request') }}">{{ _('Click to Reset It') }}</a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <p>Sign in is easy:<br>
+            Don't need a working email at this point<br>
+            Only username and password (Case Sensitive)<br>
+            </p>
+        </div>
+    </div>
+    <hr>
+{% endblock %}

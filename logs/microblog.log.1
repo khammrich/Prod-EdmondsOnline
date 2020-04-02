@@ -1,0 +1,106 @@
+2020-04-02 17:03:52,130 ERROR: Exception on /auth/login [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/auth/routes.py", line 28, in login
+    return render_template('auth/login.html', title=_('Sign In'), form=form)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 3, in top-level template code
+    {% import 'login_banner' as login_banner %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login_banner
+2020-04-02 17:03:54,114 ERROR: Exception on /auth/login [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/auth/routes.py", line 28, in login
+    return render_template('auth/login.html', title=_('Sign In'), form=form)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 3, in top-level template code
+    {% import 'login_banner' as login_banner %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login_banner
+2020-04-02 17:04:04,068 ERROR: Exception on /auth/login [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/auth/routes.py", line 28, in login
+    return render_template('auth/login.html', title=_('Sign In'), form=form)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 3, in top-level template code
+    {% import 'login_banner' as login_banner %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login_banner
+2020-04-02 17:05:14,970 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
