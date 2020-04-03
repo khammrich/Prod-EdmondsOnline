@@ -1,91 +1,91 @@
-2020-03-26 08:45:52,814 ERROR: Exception on /auth/register [POST] [in c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py:1761]
+2020-04-02 23:17:46,252 ERROR: Exception on /articles [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
-    context)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
-    cursor.execute(statement, parameters)
-sqlite3.OperationalError: no such table: user
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
     reraise(exc_type, exc_value, tb)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\_compat.py", line 35, in reraise
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
     raise value
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\auth\routes.py", line 42, in register
-    if form.validate_on_submit():
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
-    return self.is_submitted() and self.validate()
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\wtforms\form.py", line 310, in validate
-    return super(Form, self).validate(extra)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\wtforms\form.py", line 152, in validate
-    if not field.validate(self, extra):
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\wtforms\fields\core.py", line 204, in validate
-    stop_validation = self._run_validation_chain(form, chain)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
-    validator(form, self)
-  File "C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\auth\forms.py", line 25, in validate_username
-    user = User.query.filter_by(username=username.data).first()
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\orm\query.py", line 2755, in first
-    ret = list(self[0:1])
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\orm\query.py", line 2547, in __getitem__
-    return list(res)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\orm\query.py", line 2855, in __iter__
-    return self._execute_and_instances(context)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\orm\query.py", line 2878, in _execute_and_instances
-    result = conn.execute(querycontext.statement, self._params)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 945, in execute
-    return meth(self, multiparams, params)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\sql\elements.py", line 263, in _execute_on_connection
-    return connection._execute_clauseelement(self, multiparams, params)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 1053, in _execute_clauseelement
-    compiled_sql, distilled_params
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 1189, in _execute_context
-    context)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 1402, in _handle_dbapi_exception
-    exc_info
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
-    reraise(type(exception), exception, tb=exc_tb, cause=cause)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+  File "./edmondsonline/landing/routes.py", line 32, in articles
+    title=_('Articles'))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
-    context)
-  File "c:\users\khamm\py\kyleprojects\edmondsonline\edmondsonline\env\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
-    cursor.execute(statement, parameters)
-sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user [SQL: 'SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen \nFROM user \nWHERE user.username = ?\n LIMIT ? OFFSET ?'] [parameters: ('1234', 1, 0)]
-2020-03-26 09:09:30,011 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:10:17,046 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:10:35,233 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:12:03,493 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:14:47,114 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:14:58,250 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 09:15:09,194 INFO: Microblog startup [in C:\Users\khamm\py\kyleprojects\edmondsonline\edmondsonline\edmondsonline\__init__.py:74]
-2020-03-26 17:00:13,286 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:01:31,293 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:05:15,602 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:09:33,460 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:09:55,873 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:10:04,442 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:11:17,696 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-26 17:16:32,856 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:17:32,393 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:26:22,610 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:27:28,474 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-26 17:27:33,739 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-26 17:45:09,379 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-26 17:45:25,954 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-27 00:10:43,378 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-30 19:30:00,589 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-30 19:41:28,266 INFO: Microblog startup [in /home/khammrich/edmondsonline/edmondsonline/__init__.py:74]
-2020-03-31 00:14:39,845 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-31 00:15:54,399 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-03-31 00:40:55,817 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/landing/articles.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 55, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/landing/articles.html", line 9, in block "app_content"
+    <h1><li><a href="{{ url_for('landing.so_we_are_here') }}">{{ _('Explore') }}</a></li></h1>
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'landing.so_we_are_here'. Did you mean 'landing.art1' instead?
+2020-04-02 23:18:14,089 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:19:14,485 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:23:06,775 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:24:27,648 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:26:39,997 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:27:23,159 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:27:36,801 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:29:44,159 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:30:06,646 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:30:46,773 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:31:14,882 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:33:18,890 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:34:53,294 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:37:33,753 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:38:27,597 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:38:58,750 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:39:44,192 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:40:14,841 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:40:25,706 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:40:43,181 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:41:30,784 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:42:25,352 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:43:00,562 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:43:52,269 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:44:38,176 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-02 23:46:21,100 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:05:42,871 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:18:06,109 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:18:41,971 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:20:08,514 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:20:16,079 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:20:39,240 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:21:07,714 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:21:55,643 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:23:58,996 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:35:43,406 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]

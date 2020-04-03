@@ -30,3 +30,38 @@ def articles():
     return render_template(
         'landing/articles.html',
         title=_('Articles'))
+        
+        
+@bp.route('/so_here_we_are', methods=['GET', 'POST'])
+def art1():
+    return render_template(
+        'articles/art1.html',
+        title=_('So Here We Are'))
+
+
+@bp.route('/poor_cats', methods=['GET', 'POST'])
+def art2():
+    return render_template(
+        'articles/art2.html',
+        title=_('Poor Cats'))
+
+
+@bp.route('/graphs', methods=['GET', 'POST'])
+def graphs():
+    return render_template(
+        'articles/graphs.html',
+        title=_('Graphs'))
+        
+
+@bp.route('/resources', methods=['GET', 'POST'])
+def resources():
+    return render_template(
+        'articles/resources.html',
+        title=_('Resources'))
+
+
+@bp.route('/iframe', methods=['GET', 'POST'])
+def iframetest():
+    return render_template(
+        'articles/iframetest.html',
+        title=_('iframetest'))

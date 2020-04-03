@@ -1,131 +1,106 @@
-2020-03-31 13:51:37,124 ERROR: Exception on /wp-login.php [GET] [in /home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py:1761]
+2020-04-03 00:51:09,653 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1644, in handle_http_exception
-    return handler(e)
-  File "./edmondsonline/errors/handlers.py", line 8, in not_found_error
-    return render_template('errors/404.html'), 404
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
     reraise(exc_type, exc_value, tb)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/errors/404.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "html"
-    {% block body -%}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 29, in block "body"
-    {% block scripts %}
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/base.html", line 53, in block "scripts"
-    {{ super() }}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 31, in block "scripts"
-    <script src="{{bootstrap_find_resource('umd/popper.js', cdn='popper')}}"></script>
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/__init__.py", line 115, in bootstrap_find_resource
-    resource_url = cdns[cdn].get_resource_url(filename)
-KeyError: 'popper'
-2020-03-31 16:45:57,997 ERROR: Exception on /.well-known/hostinger-challenge/ [GET] [in /home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/app.py", line 1644, in handle_http_exception
-    return handler(e)
-  File "./edmondsonline/errors/handlers.py", line 8, in not_found_error
-    return render_template('errors/404.html'), 404
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
     rv = template.render(context)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
     return original_render(self, *args, **kwargs)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
     return self.environment.handle_exception(exc_info, True)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
     reraise(exc_type, exc_value, tb)
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/errors/404.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "html"
-    {% block body -%}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 29, in block "body"
-    {% block scripts %}
-  File "/home/khammrich/edmondsonline/edmondsonline/templates/base.html", line 53, in block "scripts"
-    {{ super() }}
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 31, in block "scripts"
-    <script src="{{bootstrap_find_resource('umd/popper.js', cdn='popper')}}"></script>
-  File "/home/khammrich/edmondsonline/env/lib/python3.6/site-packages/flask_bootstrap/__init__.py", line 115, in bootstrap_find_resource
-    resource_url = cdns[cdn].get_resource_url(filename)
-KeyError: 'popper'
-2020-04-02 07:21:25,117 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-04-02 08:10:09,708 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-04-02 08:17:45,278 INFO: Microblog startup [in /home/khammrich/test-edmondsonline/edmondsonline/__init__.py:74]
-2020-04-02 08:18:02,661 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-04-02 08:27:16,289 INFO: Microblog startup [in /home/khammrich/test-edmondsonline/edmondsonline/__init__.py:74]
-2020-04-02 08:27:35,544 INFO: Microblog startup [in ./edmondsonline/__init__.py:74]
-2020-04-02 08:54:03,265 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 09:00:18,008 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:51:13,614 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:52:27,907 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:52:56,984 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:53:58,313 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:54:44,590 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:55:09,807 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:55:38,365 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 1, in top-level template code
+    {% extends "art2.1.html" %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: art2.1.html
+2020-04-03 00:51:31,086 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 00:51:31,787 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 1, in top-level template code
+    {% extends "art2.1.html" %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: art2.1.html
+2020-04-03 00:51:32,983 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 1, in top-level template code
+    {% extends "art2.1.html" %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: art2.1.html

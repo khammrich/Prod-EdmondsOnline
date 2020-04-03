@@ -1,2 +1,79 @@
-2020-04-02 20:48:18,493 INFO: Microblog startup [in ./edmondsonline/__init__.py:78]
-2020-04-02 20:51:14,498 INFO: Microblog startup [in ./edmondsonline/__init__.py:78]
+2020-04-03 01:12:59,265 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 61, in template
+    {% endblock %}
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 170, in parse_statements
+    self.fail_eof(end_tokens)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 104, in fail_eof
+    return self._fail_ut_eof(None, stack, lineno)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2020-04-03 01:13:43,957 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:13:47,151 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:16:08,483 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:18:36,481 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:20:29,972 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:22:26,770 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:22:56,394 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:23:27,676 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:36:58,965 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:37:15,481 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:37:46,815 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:38:00,411 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:38:17,882 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:39:03,452 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 01:39:23,085 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:00:49,393 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:03:39,309 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:03:59,749 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:07:11,909 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:36:25,257 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:37:30,997 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:39:41,653 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 02:51:01,061 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 03:17:59,167 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 03:18:01,850 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]
+2020-04-03 03:21:07,144 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]

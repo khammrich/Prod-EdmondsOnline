@@ -2,7 +2,37 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
-
-    </nav>
+ <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/lights.jpg">
+        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="https://www.nature.com/articles/d41586-020-00984-8">
+        <img src="{{ url_for('static', filename='/media/poor_cat.jpg') }}" alt="trump lump" style="width:100%">
+        <div class="caption">
+          <p>Cats can maybe get COVID.. Dogs Already have it</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="{{ url_for('landing.art1') }}">
+        <img src="{{ url_for('static', filename='/media/trumplump.jpg') }}" alt="trump lump" style="width:100%">
+        <div class="caption">
+          <p class="text-sm">So Here We Are..</p>
+          <p><h7>By Valerie Burgess</h7></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
 {% endblock %}

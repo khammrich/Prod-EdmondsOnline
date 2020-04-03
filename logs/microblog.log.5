@@ -1,10 +1,4 @@
-2020-04-02 16:55:55,940 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:56:20,405 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:56:49,101 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:57:36,965 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 16:57:54,970 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 17:00:50,957 INFO: Microblog startup [in ./edmondsonline/__init__.py:75]
-2020-04-02 17:00:51,387 ERROR: Exception on /auth/login [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+2020-04-03 00:51:33,278 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -18,8 +12,8 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "./edmondsonline/auth/routes.py", line 28, in login
-    return render_template('auth/login.html', title=_('Sign In'), form=form)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
@@ -32,28 +26,14 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 48, in block "content"
-    {% block app_content %}{% endblock %}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 11, in block "app_content"
-    {% include "login_banner.html" %}
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 1, in top-level template code
+    {% extends "art2.1.html" %}
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
     return self._get_source_fast(environment, template)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
     raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: login_banner.html
-2020-04-02 17:00:54,076 ERROR: Exception on /auth/login [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
+jinja2.exceptions.TemplateNotFound: art2.1.html
+2020-04-03 00:51:33,580 ERROR: Exception on /poor_cats [GET] [in /home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -67,8 +47,8 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "./edmondsonline/auth/routes.py", line 28, in login
-    return render_template('auth/login.html', title=_('Sign In'), form=form)
+  File "./edmondsonline/landing/routes.py", line 46, in art2
+    title=_('Poor Cats'))
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
@@ -81,24 +61,11 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/base.html", line 48, in block "content"
-    {% block app_content %}{% endblock %}
-  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/auth/login.html", line 11, in block "app_content"
-    {% include "login_banner.html" %}
+  File "/home/khammrich/test-edmondsonline/edmondsonline/templates/articles/art2.html", line 1, in top-level template code
+    {% extends "art2.1.html" %}
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
     return self._get_source_fast(environment, template)
   File "/home/khammrich/test-edmondsonline/venv-edtest/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
     raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: login_banner.html
+jinja2.exceptions.TemplateNotFound: art2.1.html
+2020-04-03 00:54:11,595 INFO: Microblog startup [in ./edmondsonline/__init__.py:79]

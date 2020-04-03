@@ -22,6 +22,9 @@
                     <li><a href="{{ url_for('main.index') }}">{{ _('Blog') }}</a></li>
                     <li><a href="{{ url_for('landing.articles') }}">{{ _('Articles') }}</a></li>
                     <li><a href="{{ url_for('landing.poems') }}">{{ _('Poems') }}</a></li>
+                    <li><a href="{{ url_for('landing.iframetest') }}">{{ _('Iframetest') }}</a></li>
+                    <li><a href="{{ url_for('landing.graphs') }}">{{ _('COVID-19 Graphs') }}</a></li>
+                    <li><a href="{{ url_for('landing.resources') }}">{{ _('COVID-19 Resources') }}</a></li>
                     {% else %}
                     <li><a href="{{ url_for('main.explore') }}">{{ _('Explore') }}</a></li>
                     <li><a href="{{ url_for('main.explore') }}">{{ _('Explore') }}</a></li>
@@ -54,6 +57,9 @@
         {# application content needs to be provided in the app_content block #}
         {% block app_content %}{% endblock %}
     </div>
+    <footer class="navbar-fixed-bottom text-center">
+  <p>&copy; 2020 - Tempered Dynamics LLC</p>
+</footer>
 {% endblock %}
 
 {% block scripts %}
