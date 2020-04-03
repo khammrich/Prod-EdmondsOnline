@@ -33,35 +33,27 @@ def articles():
         
         
 @bp.route('/so_here_we_are', methods=['GET', 'POST'])
-def art1():
+def vbart1():
     return render_template(
-        'articles/art1.html',
+        'articles/vbart1.html',
         title=_('So Here We Are'))
 
 
-@bp.route('/poor_cats', methods=['GET', 'POST'])
-def art2():
+@bp.route('/covidWiki', methods=['GET', 'POST'])
+def wiki():
     return render_template(
-        'articles/art2.html',
+        'articles/wiki.html',
         title=_('Poor Cats'))
 
 
-@bp.route('/graphs', methods=['GET', 'POST'])
-def graphs():
+@bp.route('/selfchecker', methods=['GET', 'POST'])
+def selfchecker():
     return render_template(
-        'articles/graphs.html',
-        title=_('Graphs'))
-        
+        'articles/selfchecker.html',
+        title=_('Poor Cats'))
 
-@bp.route('/resources', methods=['GET', 'POST'])
-def resources():
+@bp.route('/whoupdates', methods=['GET', 'POST'])
+def whoupdates():
     return render_template(
-        'articles/resources.html',
-        title=_('Resources'))
-
-
-@bp.route('/iframe', methods=['GET', 'POST'])
-def iframetest():
-    return render_template(
-        'articles/iframetest.html',
-        title=_('iframetest'))
+        'articles/whoupdates.html',
+        title=_('WHO Updates'))
