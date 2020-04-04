@@ -72,3 +72,10 @@ def merchants():
     return render_template(
         'landing/mechants.html',
         title=_('Local Merchants'))
+        
+        
+@bp.route('/gun_sales', methods=['GET', 'POST'])
+def guns():
+    return render_template(
+        'articles/guns.html',
+        title=_('Gun Sales are Increasing'))
