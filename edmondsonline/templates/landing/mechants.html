@@ -1,0 +1,512 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<div class="container align-center"></div>
+<table class="table" max-width="780" style="margin: 0 auto; max-width: 780px width: 100%">
+<tbody class="align-center">
+<tr>
+<td colspan="4" width="780"><strong>Edmonds Local Food Services during COVID-19 Shutdown</strong></td>
+</tr>
+<tr>
+<td width="204"><strong>Business</strong></td>
+<td width="189"><strong>Address</strong></td>
+<td width="97"><strong>Phone</strong></td>
+<td width="290"><strong>Services</strong></td>
+</tr>
+<tr>
+<td width="204"><a href="https://themarket190sunset.com/"><strong>190 Sunset</strong></a></td>
+<td width="189">190 Sunset Ave</td>
+<td width="97">425-329-3669</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/407coffee/"><strong>407 Coffee house</strong></a></td>
+<td width="189">407 Main Street</td>
+<td width="97">425-921-6147</td>
+<td width="290">cutting back hours</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/pages/5-Corners-Teriyaki/113614982001591"><strong>5 Corners Teriyaki</strong></a></td>
+<td width="189">8410 Main Street</td>
+<td width="97">425-774-5775</td>
+<td width="290">Takeout by phone; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.anthonys.com/restaurants/detail/anthonys-homeport-edmonds"><strong>Anthony’s Restaurant and Beach Café</strong></a></td>
+<td width="189">456 Admiral Way</td>
+<td width="97">425-771-4400</td>
+<td width="290">Takeout and curbside pickup at Beach Café. See website for special curbside pickup menu.</td>
+</tr>
+<tr>
+<td width="204"><a href="https://arniesrestaurant.com/"><strong>Arnie’s </strong></a></td>
+<td width="189">300 Admiral Way</td>
+<td width="97">425-771-5688</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.bardojo.com/"><strong>Bar Dojo</strong></a></td>
+<td width="189">8404 Bowdoin Way</td>
+<td width="97">425-967-7267</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.barkadaedmonds.com/"><strong>Barkada</strong></a></td>
+<td width="189">622 5th Ave N</td>
+<td width="97">425-670-2222</td>
+<td width="290">Takeout and door dash Weds-Sun</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.bistro76kitchen.com/"><strong>Bistro 76</strong></a></td>
+<td width="189">18401 76th Ave W</td>
+<td width="97">425-776-3616</td>
+<td width="290">Drive through and to go orders by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.bpgroupusa.com/"><strong>Boiling Point</strong></a></td>
+<td width="189">22001 Highway 99</td>
+<td width="97">425-673-7101</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://brigidsbottleshop.com/"><strong>Brigid’s Bottle Shop</strong></a></td>
+<td width="189">188 Sunset Ave</td>
+<td width="97">425-582-8218</td>
+<td width="290">retail only</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.bucatiniedmonds.com/"><strong>Bucatini</strong></a></td>
+<td width="189">9818 Edmonds Way</td>
+<td width="97">425-361-1487</td>
+<td width="290">Takeout by phone; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.caffeladro.com/locations/edmonds-caffe-ladro/"><strong>Café Ladro</strong></a></td>
+<td width="189">8403 Main Street</td>
+<td width="97">425-670-1790</td>
+<td width="290">Drive up window, walk-in counter for take out</td>
+</tr>
+<tr>
+<td width="204"><a href="https://cafelouvreedmonds.com/"><strong>Café Louvre</strong></a></td>
+<td width="189">210 5th Avenue</td>
+<td width="97">425-64–8188</td>
+<td width="290">Takeout only</td>
+</tr>
+<tr>
+<td width="204"><a href="https://calypsoedmonds.com/"><strong>Calypso</strong></a></td>
+<td width="189">109 Main St.</td>
+<td width="97">425-678-0652</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="http://canarinogelato.com/"><strong>Canarino Gelato</strong></a></td>
+<td width="189">203 Fifth Ave</td>
+<td width="97">425-243-9635</td>
+<td width="290">Open regular hours for takeout</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.caravankebab.com/"><strong>Caravan Kabob</strong></a></td>
+<td width="189">9711 Firdale Ave</td>
+<td width="97">206-546-7999</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://thechannelmarkerpubngrill.com/"><strong>Channel Marker</strong></a></td>
+<td width="189">120 W. Dayton #1</td>
+<td width="97">425-275-9590</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="http://chanterellewa.com/"><strong>Chanterelle</strong></a></td>
+<td width="189">316 Main St.</td>
+<td width="97">425-774-0650</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.cheesemongerstable.com/"><strong>Cheesemonger’s Table</strong></a></td>
+<td width="189">203 5th Ave S</td>
+<td width="97">425-640-8949</td>
+<td width="290">Takeout by phone. Third party delivery only</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.chefdane.com/"><strong>Chef Dane Catering</strong></a></td>
+<td width="189">19515 44th Ave W, Lynnwood</td>
+<td width="97">206-794-0812</td>
+<td width="290">Takeout by phone; In house delivery service</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.chopsticksinedmonds.com/"><strong>Chopsticks</strong></a></td>
+<td width="189">23025 100th Ave W</td>
+<td width="97">425-776-1196</td>
+<td width="290">Take out by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://churchkeypub.com/"><strong>Church Key Pub</strong></a></td>
+<td width="189">109 4th Ave N</td>
+<td width="97">425-835-0230</td>
+<td width="290">Takeout food and growlers by phone; takeout window, curbside pickup</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.clairespantry.com/"><strong>Claire’s Restaurant</strong></a></td>
+<td width="189">301 Main Street</td>
+<td width="97">425-776-2333</td>
+<td width="290">appears closed up tight</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.toasttab.com/demetris-woodstone-taverna/v2/online-order#!/"><strong>Demetris Woodstone Taverna</strong></a></td>
+<td width="189">101 Main St, Edmonds</td>
+<td width="97">425-744-9999</td>
+<td width="290">Takeout order via phone or website; third party delivery only; 10% off online orders</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.ddir.com/"><strong>Dick’s Drive In</strong></a></td>
+<td width="189">21910 Hwy 99</td>
+<td width="97">425-775-4243</td>
+<td width="290">Takeout</td>
+</tr>
+<tr>
+<td width="204"><a href="http://edmondsbakery.com/"><strong>Edmonds Bakery</strong></a></td>
+<td width="189">418 Main Street</td>
+<td width="97">425-778-6811</td>
+<td width="290">Open 9-5 for takeout</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.engelsbar.com/"><strong>Engel’s Pub</strong></a></td>
+<td width="189">113 5th Ave S</td>
+<td width="97">425-778-2900</td>
+<td width="290">Pub meals to go; menu on website</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.epulobistro.com/"><strong>Epulo</strong></a></td>
+<td width="189">526 Main Street</td>
+<td width="97">425-678-8680</td>
+<td width="290">Takeout by phone or order online, pickup or delivery available 11:30 am – 4:30 pm</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/myfatpigbbq/"><strong>Fat Pig Barbeque</strong></a></td>
+<td width="189">7533 Olympic View Dr</td>
+<td width="97">425-361-7640</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.fiveedmonds.com/"><strong>Five</strong></a></td>
+<td width="189">650 Edmonds Way</td>
+<td width="97">435-563-7177</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.furichinese.com/"><strong>Furi Chinese</strong></a></td>
+<td width="189">546 5th Ave S</td>
+<td width="97">425-673-9933</td>
+<td width="290">Order online; free delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://whereubrew.com/"><strong>Gallagher’s Where you Brew</strong></a></td>
+<td width="189">180 W. Dayton</td>
+<td width="97">425-776-4209</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.girardis-osteria.com/"><strong>Girardi’s Osteria</strong></a></td>
+<td width="189">504 5th Ave</td>
+<td width="97">425-673-5278</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="http://thehookseafood.com/"><strong>Hook</strong></a></td>
+<td width="189">18521 76th Ave W</td>
+<td width="97">425-673-0551</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.ivars.com/ivarsreservations/item/248-edmonds"><strong>Ivar’s seafood bar</strong></a></td>
+<td width="189">9910 Edmonds Way</td>
+<td width="97">425-672-2640</td>
+<td width="290">Takeout by phone; Third party delivery only</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.johnnyswok.com/"><strong>Johnny’s Wok</strong></a></td>
+<td width="189">19626 76th Ave W</td>
+<td width="97">425-775-3313</td>
+<td width="290">Takeout by phone, online; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.toasttab.com/kafe-neo-edmonds/v2/online-order#!/"><strong>Kafe Neo</strong></a></td>
+<td width="189">21108 Hwy 99</td>
+<td width="97">425-672-3476</td>
+<td width="290">Takeout order via phone or website; Third party delivery only</td>
+</tr>
+<tr>
+<td width="204"><a href="https://kebellas-pizza-online-ordering.securebrygid.com/zgrid/themes/131/intro/index.jsp"><strong>Kebella’s Pizza</strong></a></td>
+<td width="189">630 Edmonds Way</td>
+<td width="97">425-744-0284</td>
+<td width="290">Order by phone or online; take out or free delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://kelnero.bar/"><strong>Kelnero</strong></a></td>
+<td width="189">545 Main Street</td>
+<td width="97">425-967-5697</td>
+<td width="290">Takeout by phone; online ordering at toasttab.com/kelnero</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.lasbrisasfood.com/"><strong>Las Brisas</strong></a></td>
+<td width="189">201 5th Avenue</td>
+<td width="97">425-672-5050</td>
+<td width="290">take out,</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.maizebarley.com/"><strong>Maize/Barley</strong></a></td>
+<td width="189">525 Main Street</td>
+<td width="97">425-835-0868</td>
+<td width="290">take out window service</td>
+</tr>
+<tr>
+<td width="204"><a href="https://marketfreshfish.com/"><strong>Mar Ket</strong></a></td>
+<td width="189">508 Main Street</td>
+<td width="97">425-967-5329</td>
+<td width="290">Walkup window; takeout by phone or order thru app;&nbsp; third party delivery; half price bottles of wine</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.melandmias.com/"><strong>Mel and Mia’s </strong></a></td>
+<td width="189">7530 Olympic View Drive</td>
+<td width="97">425-361-7044</td>
+<td width="290">Takeout and delivery Weds-Sun</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/Noodle-Hut-186979905093766/"><strong>Noodle Hut</strong></a></td>
+<td width="189">8418 Bowdoin Way</td>
+<td width="97">425-423-7718</td>
+<td width="290">Closed till April 9</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/casaoaxacaedmondsrestaurant/"><strong>Oaxaca</strong></a></td>
+<td width="189">8402 Bowdoin Way</td>
+<td width="97">425-678-8307</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://eatonopoke.com/"><strong>Ono Poke</strong></a></td>
+<td width="189">10016 Edmonds Way</td>
+<td width="97">425-361-7064</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.pagliacci.com/"><strong>Pagliaci</strong></a></td>
+<td width="189">10200 Edmonds Way</td>
+<td width="97">206-726-1717</td>
+<td width="290">Takeout and delivery by phone or website</td>
+</tr>
+<tr>
+<td width="204"><strong>Pancake Haus</strong></td>
+<td width="189">530 5th Ave S</td>
+<td width="97">425-771-2545</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://delivery.panerabread.com/menu/category/"><strong>Panera Bread</strong></a></td>
+<td width="189">7929 Ballinger Way</td>
+<td width="97">425-640-2025</td>
+<td width="290">Order phone or online; Pickup in store</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.pccmarkets.com/stores/edmonds/"><strong>PCC Edmonds</strong></a></td>
+<td width="189">9803 Edmonds Way</td>
+<td width="97">425-275-9036</td>
+<td width="290">Grocery delivery; senior shopping hours 7-8 am;&nbsp; in-store self-serve stations and seating areas closed. Latest info here: https://www.pccmarkets.com/news/2020/an-update-from-pcc-actions-were-taking-to-prevent-spread-of-coronavirus-covid-19/</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.pacificnorthwestcatering.com/"><strong>PNW Catering</strong></a></td>
+<td width="189">&nbsp;</td>
+<td width="97">206-367-0619</td>
+<td width="290">Takeout by phone; In house delivery service</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.portofinopizza.com/"><strong>Portofino</strong></a></td>
+<td width="189">1306 Olympic View Dr</td>
+<td width="97">425-771-4788</td>
+<td width="290">Takeout by phone; in-house delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.redtwig.com/"><strong>Red Twig</strong></a></td>
+<td width="189">117 5th Ave S.</td>
+<td width="97">425-771-1200</td>
+<td width="290">take out by phone, curbside pickup; free kids’ meal w/ entrée purchase M-F</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.romeosedmonds.com/"><strong>Romeo’s Restaurant</strong></a></td>
+<td width="189">21110 76th Ave W</td>
+<td width="97">425-771-7955</td>
+<td width="290">takeout by phone or app; in-house delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://rorysofedmonds.com/"><strong>Rory’s </strong></a></td>
+<td width="189">105 Main Street</td>
+<td width="97">425-778-3433</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.revelationsyogurt.com/"><strong>Revelations Frozen Yogurt</strong></a></td>
+<td width="189">527 Main Street</td>
+<td width="97">425-744-6012</td>
+<td width="290">Open for takeout</td>
+</tr>
+<tr>
+<td width="204"><a href="http://rustypelicancafe.com/"><strong>Rusty Pelican</strong></a></td>
+<td width="189">107 5th Ave N</td>
+<td width="97">425-582-8250</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="http://salishbrewing.com/"><strong>Salish Sea Brewery</strong></a></td>
+<td width="189">518 Dayton Street</td>
+<td width="97">425-582-8474</td>
+<td width="290">Phone in orders; sandwichs, growlers</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.saltniron.com/"><strong>Salt and Iron</strong></a></td>
+<td width="189">321 Main St</td>
+<td width="97">425-361-1112</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.sankaisushi.com/"><strong>San Kai Sushi</strong></a></td>
+<td width="189">111 4th Ave N</td>
+<td width="97">425-412-3417</td>
+<td width="290">Takeout by phone, lunch and dinner</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/edmondssantafe/"><strong>Santa Fe Mexican</strong></a></td>
+<td width="189">423 Main Street</td>
+<td width="97">425-245-7916</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://scottsbarandgrill.com/"><strong>Scott’s </strong></a></td>
+<td width="189">8115 Ballinger Way</td>
+<td width="97">425-775-2561</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://scratchdistillery.com/"><strong>Scratch Distillery</strong></a></td>
+<td width="189">190 Sunset Ave</td>
+<td width="97">425-673-7046</td>
+<td width="290">Open Thu-Fri 4-6 pm, Sat-Sun 2-6 pm for to go, curbside and local delivery. Order via website, email, phone or walkup.</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/SpudFishAndChipsEdmonds/"><strong>Spud Fish and Chips</strong></a></td>
+<td width="189">174 Sunset Way</td>
+<td width="97">425-678-0984</td>
+<td width="290">Takeout by phone; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.starbucks.com/"><strong>Starbucks 220th and Hwy 99</strong></a></td>
+<td width="189">21920 Hwy 99</td>
+<td width="97">425-775-4286</td>
+<td width="290">Closed; driveup service at other locations</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.starbucks.com/"><strong>Starbucks Main St</strong></a></td>
+<td width="189">502 Main Street</td>
+<td width="97">425-778-6093</td>
+<td width="290">Closed; driveup service at other locations</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.starbucks.com/"><strong>Starbucks Westgate</strong></a></td>
+<td width="189">9801 Edmonds Wa</td>
+<td width="97">425-670-2616</td>
+<td width="290">Drive up window service only</td>
+</tr>
+<tr>
+<td width="204"><a href="https://order.subway.com/en-US"><strong>Subway</strong></a></td>
+<td width="189">7600 196TH ST SW</td>
+<td width="97">(425) 771-1127</td>
+<td width="290">Takeout and third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://tandtseafoodrestaurant.com/"><strong>T&amp;T Seafood</strong></a></td>
+<td width="189">225511 Hwy 99</td>
+<td width="97">425-776-3832</td>
+<td width="290">Takeout by phone; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/AVeryTakiTiki/"><strong>Taki Tiki</strong></a></td>
+<td width="189">518 Main Street</td>
+<td width="97">425-778-3548</td>
+<td width="290">Takeout window or by phone; third party delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://tastythaiedmonds.com/menu/"><strong>Tasty Thai</strong></a></td>
+<td width="189">22611 76th Ave W</td>
+<td width="97">425-775-2141</td>
+<td width="290">Takeout by phone; in-house delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/thaibyday/"><strong>Thai By Day</strong></a></td>
+<td width="189">182 Sunset Ave</td>
+<td width="97">425-967-7181</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="http://thaicottage.net/"><strong>Thai Cottage</strong></a></td>
+<td width="189">417 Main Street</td>
+<td width="97">425-774-3969</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.thanbrothers.com/menu.html"><strong>Than Brothers Pho</strong></a></td>
+<td width="189">22618 Hwy 99</td>
+<td width="97">425-744-0212</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://theloftlounge.com/"><strong>The Loft</strong></a></td>
+<td width="189">515 Main</td>
+<td width="97">(425) 640-5000</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.toppotdoughnuts.com/"><strong>Top Pot</strong></a></td>
+<td width="189">150 Sunset</td>
+<td width="97">425-582-2579</td>
+<td width="290">mobile orders; take out</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/ToshisEdmonds/"><strong>Toshi’s Teriyaki</strong></a></td>
+<td width="189">311 Main Street</td>
+<td width="97">425-670-8122</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="https://venicepizza-edmonds-wa.securebrygid.com/zgrid/themes/772/intro/index.jsp"><strong>Venice Pizza Pasta</strong></a></td>
+<td width="189">9695 Firdale Ave</td>
+<td width="97">425-533-1280</td>
+<td width="290">Takeout by phone, online; in house delivery</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.walnutstreetcoffee.com/"><strong>Walnut Coffee</strong></a></td>
+<td width="189">410 Walnut Street</td>
+<td width="97">425-774-5962</td>
+<td width="290">Temporarily closed.Visit walnutstreetcoffee.com to purchase coffee, brewing equipment, gift cards and Walnut merch! 30% of all merchandise sales go directly to Walnut baristas.</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/lindaswaterfrontcafe/"><strong>Waterfront Café (Eatery)</strong></a></td>
+<td width="189">300 Admiral Way</td>
+<td width="97">425-743-9590</td>
+<td width="290">Closed till further notice</td>
+</tr>
+<tr>
+<td width="204"><a href="https://www.facebook.com/WaterfrontCoffeeCompany/?ref=br_rs"><strong>Waterfront Coffee</strong></a></td>
+<td width="189">101 Main St, Edmonds</td>
+<td width="97">425-670-1400</td>
+<td width="290">Takeout by phone</td>
+</tr>
+<tr>
+<td width="204"><a href="http://www.wontonoodle.com/"><strong>Wonton Noodle House</strong></a></td>
+<td width="189">22315 Hwy 99</td>
+<td width="97">425-775-8628</td>
+<td width="290">Takeout by phone</td>
+</tr>
+</tbody>
+</table>
+</div>
+{% endblock %}

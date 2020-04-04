@@ -6,7 +6,7 @@
 </style>
     <h1></h1>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height: 400px; height: 100%; max-width: 1000px; width: 100%; margin: 0 auto">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -15,16 +15,16 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item">
+      <div class="item active">
         <a href="{{ url_for('landing.selfchecker') }}">
-        <img src="{{ url_for('static', filename='/media/Covid.jpg') }}" class="image-responsive" alt="Covid"></a>
+        <img src="{{ url_for('static', filename='/media/Covid.jpg') }}" class="image-responsive" alt="Covid" style="margin: 0 auto; max-height: 400px; height: 100%; max-width: 1000px; width: 100%"></a>
         <div class="carousel-caption">
           <h3>Self Checker</h3>
           <p>Basic Self Diagnosis</p>
         </div>      
       </div>
-      <div class="item active" style="width: 100%">
-        <img src="{{ url_for('static', filename='/media/poor_cat.jpg') }}" class="image-responsive" alt="Sick Cat" style="width: auto">
+      <div class="item" style="width: 100%">
+        <img src="{{ url_for('static', filename='/media/poor_cat.jpg') }}" class="image-responsive" alt="Sick Cat" style="margin: 0 auto; max-height: 400px; height: 100%; max-width: 900px; width: 100%">
         <div class="carousel-caption">
           <h3>Cats Can Be infected..</h3>
           <p>but not dogs</p>
@@ -42,18 +42,12 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-<div class="container  ">
-    <div id="ember61" class="bs-row row ember-view"> 
-    <div id="ember63" class="col-sm-12 ember-view">
-    <div id="ember64" class="iframe-card ember-view">  
-    <div id="ember65" class="hub-iframe ember-view">  
-    <iframe scrolling="no" frameborder="0" style="width: 1000px; height: 800px" title="" src="https://snoco-gis.maps.arcgis.com/apps/opsdashboard/index.html#/72574a34259d425087088239b2cc615d"></iframe>
+<div id="Container"
+ style="position:relative; display:block; max-height: 800px; max-width: 1000px; width: 100%; margin: 0 auto">
+    <iframe scrolling="no" frameborder="0" title="" width="100%" height="800px" src="https://snoco-gis.maps.arcgis.com/apps/opsdashboard/index.html#/72574a34259d425087088239b2cc615d"></iframe>
 </div>
 </div>
 </div>
 </div>
-</div><br>
-
-
-
+</div>
 {% endblock %}

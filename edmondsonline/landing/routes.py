@@ -52,8 +52,23 @@ def selfchecker():
         'articles/selfchecker.html',
         title=_('Poor Cats'))
 
+
 @bp.route('/whoupdates', methods=['GET', 'POST'])
 def whoupdates():
     return render_template(
         'articles/whoupdates.html',
         title=_('WHO Updates'))
+        
+        
+@bp.route('/wfhtips', methods=['GET', 'POST'])
+def wfhtips():
+    return render_template(
+        'articles/wfhtips.html',
+        title=_('WFH Tips'))
+
+
+@bp.route('/merchants', methods=['GET', 'POST'])
+def merchants():
+    return render_template(
+        'landing/mechants.html',
+        title=_('Local Merchants'))
