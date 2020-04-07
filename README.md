@@ -1,8 +1,8 @@
 # Prod-EdmondsOnline
 <strong>EdmondsOnline</strong>
 
-<strong>The project started to help the people of Edmonds during these times. <br>
-The EdmondsOnline.com project started with the intent of helping people:</strong> 
+<strong>The EdmondsOnline.com project started with the intent of helping people accomplish the following: <br>
+</strong> 
 <ul>
 <li>Communicate their needs</li>
 <li>Organize and schedule store runs to pick up items people needed <br>
