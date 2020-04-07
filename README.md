@@ -1,7 +1,7 @@
 # Prod-EdmondsOnline
-EdmondsOnline Production
+<strong>EdmondsOnline</strong>
 
-<strong>The project started to help the people of Edmonds during these times. 
+<strong>The project started to help the people of Edmonds during these times. <br>
 The EdmondsOnline.com project started with the intent of helping people:</strong> 
 <ul>
 <li>Communicate their needs</li>
