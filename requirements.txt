@@ -47,7 +47,7 @@ ply==3.11
 pyasn1==0.4.8
 pycparser==2.19
 pycrypto==2.6.1
-PyJWT==1.5.3
+PyJWT==2.4.0
 pyOpenSSL==19.1.0
 pyparsing==2.2.0
 pyRFC3339==1.0
